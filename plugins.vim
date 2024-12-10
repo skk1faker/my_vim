@@ -16,32 +16,19 @@ call plug#begin()
 	Plug 'vim-airline/vim-airline-themes'
 	Plug 'bling/vim-bufferline'
 
+	" 同步工具
+	Plug 'kenn7/vim-arsync'
+	" vim-arsync depedencies
+	Plug 'prabirshrestha/async.vim'
+
 
 call plug#end()
 
-
-
-let g:lsp_diagnostics_enabled = 1         " disable diagnostics support
-let g:lsp_diagnostics_signs_error = {'text': 'E'}
-"let g:lsp_diagnostics_signs_warning = {'text': '‼', 'icon': '/path/to/some/icon'} " icons require GUI
-let g:lsp_diagnostics_signs_warning = {'text': '‼'} 
-" let g:lsp_diagnostics_signs_hint = {'icon': '/path/to/some/other/icon'} " icons require GUI
-
-let g:lsp_document_highlight_enabled = 0
-
-let g:lsp_diagnostics_echo_cursor = 1
-let g:lsp_diagnostics_echo_delay = 1
-let g:lsp_diagnostics_virtual_text_enabled = 1		" vim9.0以上好使
-let g:lsp_diagnostics_float_cursor = 1
-let g:lsp_diagnostics_float_delay = 200
-let g:lsp_diagnostics_float_insert_mode_enabled = 1
-
-let g:lsp_diagnostics_signs_enabled = 1
-let g:lsp_signature_help_enabled = 0
+source ~/.vim_my/plugs/lsp_config.vim
 source ~/.vim_my/plugs/lsp/clangd.vim
 source ~/.vim_my/plugs/lsp/gopls.vim
 
 source ~/.vim_my/plugs/blameline.vim
 source ~/.vim_my/plugs/airline.vim
 source ~/.vim_my/plugs/bufferline.vim
-
+source ~/.vim_my/plugs/arsync.vim
