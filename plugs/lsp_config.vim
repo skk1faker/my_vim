@@ -28,6 +28,12 @@ augroup lsp_install
     autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
 augroup END
 
+" 折叠
+" set foldmethod=expr
+" 			\ foldexpr=lsp#ui#vim#folding#foldexpr()
+" 			\ foldtext=lsp#ui#vim#folding#foldtext()
+let g:lsp_fold_enabled = 0
+
 let g:lsp_diagnostics_enabled = 1         " disable diagnostics support
 let g:lsp_diagnostics_signs_error = {'text': 'E'}
 "let g:lsp_diagnostics_signs_warning = {'text': '‼', 'icon': '/path/to/some/icon'} " icons require GUI
@@ -45,12 +51,8 @@ let g:lsp_diagnostics_float_insert_mode_enabled = 1
 
 let g:lsp_diagnostics_signs_enabled = 1
 let g:lsp_signature_help_enabled = 0
+let g:lsp_log_verbose = 0
 
-" 折叠
-set foldmethod=expr
-			\ foldexpr=lsp#ui#vim#folding#foldexpr()
-			\ foldtext=lsp#ui#vim#folding#foldtext()
-let g:lsp_fold_enabled = 0
 
 " 语法高亮
 let g:lsp_semantic_enabled = 1

@@ -29,6 +29,12 @@ set autoindent
 " 代码折叠
 set foldmethod=manual
 
+" 搜索高亮
+set hlsearch
+
+" 显示输入命令
+set showcmd
+
 " 自动保存折叠和加载折叠
 au BufWinLeave * silent! mkview
 au BufWinEnter * silent! loadview
