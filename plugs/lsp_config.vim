@@ -1,11 +1,3 @@
-if executable('pylsp')
-    " pip install python-lsp-server
-    au User lsp_setup call lsp#register_server({
-        \ 'name': 'pylsp',
-        \ 'cmd': {server_info->['pylsp']},
-        \ 'allowlist': ['python'],
-        \ })
-endif
 
 function! s:on_lsp_buffer_enabled() abort
     setlocal omnifunc=lsp#complete
@@ -53,3 +45,12 @@ let g:lsp_diagnostics_float_insert_mode_enabled = 1
 
 let g:lsp_diagnostics_signs_enabled = 1
 let g:lsp_signature_help_enabled = 0
+
+" 折叠
+set foldmethod=expr
+			\ foldexpr=lsp#ui#vim#folding#foldexpr()
+			\ foldtext=lsp#ui#vim#folding#foldtext()
+let g:lsp_fold_enabled = 0
+
+" 语法高亮
+let g:lsp_semantic_enabled = 1

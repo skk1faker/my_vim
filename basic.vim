@@ -1,9 +1,7 @@
 
+let mapleader = "\<space>"			"这句话必须放在最前面，否则无法重新映射leader https://blog.csdn.net/qwaszx523/article/details/77878517
 set paste
 set fileencodings=utf-8,gb2312
-
-set path=/data/home/skfakerwang/group_logic/**
-set tags=/data/home/skfakerwang/group_logic/tags
 
 " 显示行号
 set number

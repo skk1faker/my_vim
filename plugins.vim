@@ -25,6 +25,7 @@ call plug#begin()
 call plug#end()
 
 source ~/.vim_my/plugs/lsp_config.vim
+source ~/.vim_my/plugs/async.vim						" 代码补全
 source ~/.vim_my/plugs/lsp/clangd.vim
 source ~/.vim_my/plugs/lsp/gopls.vim
 
