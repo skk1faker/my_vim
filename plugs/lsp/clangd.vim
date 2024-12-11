@@ -1,6 +1,6 @@
 
 " coc不要给出警告了
-let g:coc_disable_startup_warning = 1
+"let g:coc_disable_startup_warning = 1
 
 " clangd
 if executable('clangd')
