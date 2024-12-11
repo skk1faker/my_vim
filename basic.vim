@@ -35,6 +35,10 @@ set hlsearch
 " 显示输入命令
 set showcmd
 
+" 设置显示当前行
+
+set cursorline
+
 " 自动保存折叠和加载折叠
 au BufWinLeave * silent! mkview
 au BufWinEnter * silent! loadview
