@@ -27,7 +27,24 @@ set incsearch
 set autoindent
 
 " 代码折叠
-set foldmethod=manual
+"set foldmethod=manual
+set foldmethod = syntax
+"manual           手工定义折叠
+"indent             更多的缩进表示更高级别的折叠
+"expr                用表达式来定义折叠
+"syntax             用语法高亮来定义折叠
+"diff                  对没有更改的文本进行折叠
+"marker            对文中的标志折叠
+""zi 打开关闭折叠
+""zv 查看此行
+"zm 关闭折叠
+"zM 关闭所有
+"zr 打开
+"zR 打开所有
+"zc 折叠当前行
+"zo 打开当前折叠
+"zd 删除折叠
+"zD 删除所有折叠
 
 " 搜索高亮
 set hlsearch
@@ -39,6 +56,15 @@ set showcmd
 
 set cursorline
 
+" 显示补全行数
+set pumheight=10
+
+" 更新时间20ms, 用于blameline中快速刷新显示
+set updatetime=20
+
 " 自动保存折叠和加载折叠
 au BufWinLeave * silent! mkview
 au BufWinEnter * silent! loadview
+
+" 刷题键位
+source ~/.vim_my/basic/acm.vim

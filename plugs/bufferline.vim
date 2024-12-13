@@ -1,5 +1,5 @@
 " 表示缓冲线是否应自动回显到命令栏
-let g:bufferline_echo = 1
+let g:bufferline_echo = 0
 
 " 缓冲分割
 let g:bufferline_active_buffer_left = '['
@@ -15,10 +15,10 @@ let g:bufferline_show_bufnr = 1
 let g:bufferline_rotate = 0
 
 " 以固定的当前缓冲区位置滚动
-let g:bufferline_rotate = 1
+"let g:bufferline_rotate = 1
 
 " 在没有固定当前缓冲区位置的情况下滚动
-let g:bufferline_rotate = 2
+"let g:bufferline_rotate = 2
 
 let g:airline#extensions#tabline#buffer_idx_mode = 1
 nmap <leader>1 <Plug>AirlineSelectTab1

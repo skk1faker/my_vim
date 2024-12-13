@@ -43,6 +43,12 @@ call plug#begin()
 	Plug 'tyrannicaltoucan/vim-quantum'
 
 	Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'npm ci'}
+
+	" git工具
+	Plug 'airblade/vim-gitgutter'
+
+	" airline显示分支
+	Plug 'tpope/vim-fugitive'
 call plug#end()
 
 
