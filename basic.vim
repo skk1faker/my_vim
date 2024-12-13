@@ -1,6 +1,6 @@
 
 let mapleader = "\<space>"			"这句话必须放在最前面，否则无法重新映射leader https://blog.csdn.net/qwaszx523/article/details/77878517
-set paste
+"set paste							" 打开这个会导致补全失败
 set fileencodings=utf-8,gb2312
 
 " 显示行号
@@ -28,7 +28,7 @@ set autoindent
 
 " 代码折叠
 "set foldmethod=manual
-set foldmethod = syntax
+set foldmethod=syntax
 "manual           手工定义折叠
 "indent             更多的缩进表示更高级别的折叠
 "expr                用表达式来定义折叠
