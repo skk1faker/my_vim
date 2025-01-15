@@ -62,9 +62,18 @@ set pumheight=10
 " 更新时间20ms, 用于blameline中快速刷新显示
 set updatetime=20
 
+"  设置补全不显示提示
+set completeopt=menu
+
 " 自动保存折叠和加载折叠
 au BufWinLeave * silent! mkview
 au BufWinEnter * silent! loadview
+
+" vim的backspace不能使用，需要加上这个
+"indent: 如果用了:set indent,:set ai 等自动缩进，想用退格键将字段缩进的删掉，必须设置这个选项。否则不响应。
+"eol:如果插入模式下在行开头，想通过退格键合并两行，需要设置eol。
+"start:要想删除此次插入前的输入，需设置这个。
+set backspace=indent,eol,start
 
 " 刷题键位
 source ~/.vim_my/basic/acm.vim

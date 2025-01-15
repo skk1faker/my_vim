@@ -1,4 +1,4 @@
 
 " 左右Tab切换
-noremap <C-h> :BufferLineCyclePrev<CR>
-noremap <C-l> :BufferLineCycleNext<CR>
+noremap <C-h> :bprevious<CR>
+noremap <C-l> :bnext<CR>

@@ -12,7 +12,6 @@ call plug#begin()
 
 	" 同步工具
 	Plug 'kenn7/vim-arsync'
-	Plug 'tyrannicaltoucan/vim-quantum'
 
 	"Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'npm ci'}
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -22,6 +21,13 @@ call plug#begin()
 
 	" airline显示分支
 	Plug 'tpope/vim-fugitive'
+
+	" cpp 高亮
+	Plug 'octol/vim-cpp-enhanced-highlight'
+
+	" 皮肤
+	Plug 'morhetz/gruvbox'
+	Plug 'tyrannicaltoucan/vim-quantum'
 call plug#end()
 
 
@@ -31,3 +37,4 @@ source ~/.vim_my/plugs/bufferline.vim
 source ~/.vim_my/plugs/arsync.vim
 source ~/.vim_my/plugs/tagbar.vim
 source ~/.vim_my/plugs/coc.vim
+source ~/.vim_my/plugs/gitgutter.vim

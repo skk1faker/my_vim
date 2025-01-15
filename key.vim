@@ -7,11 +7,11 @@ noremap <C-k> 5k
 
 " buffer跳转
 noremap ]b :bnext<CR>
-noremap [b :bnext<CR>
+noremap [b :bprevious<CR>
 
 " quickfix 跳转
 noremap ]q :cnext<CR>
-noremap [q :cnext<CR>
+noremap [q :cprevious<CR>
 
 "tab 跳转
 noremap [t gt
@@ -29,7 +29,27 @@ imap <S-Up> <Nop>
 
 " 打开终端
 
-"noremap <leader>t :sp | resize 10 |terminal<CR>
+command! CallTermainal :botright split|resize 10|term++curwin
+noremap <leader>t :CallTermainal<CR>
+
+vmap < <gv
+vmap > >gv
+
+map <C-Left> <nop>
+map <C-Right> <nop>
+imap <C-Left> <nop>
+imap <C-Right> <nop>
+map <PageUp> <nop>
+map <PageDown> <nop>
+imap <PageUp> <nop>
+imap <PageDown> <nop>
+vmap <PageUp> <nop>
+vmap <PageDown> <nop>
+
+imap <C-l> <ESC>ea
+imap <C-h> <ESC>gea
+
+noremap <F6> :set paste!<CR>
 
 source ~/.vim_my/keys/coc_key.vim
 source ~/.vim_my/keys/blameline.vim

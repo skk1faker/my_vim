@@ -16,11 +16,11 @@ set signcolumn=yes
 " no select by `"suggest.noselect": true` in your configuration file
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
 " other plugin before putting this into your config
-inoremap <silent><expr> <TAB>
-			\ coc#pum#visible() ? coc#pum#next(1) :
-			\ CheckBackspace() ? "\<Tab>" :
-			\ coc#refresh()
-inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
+" inoremap <silent><expr> <TAB>
+" 			\ coc#pum#visible() ? coc#pum#next(1) :
+" 			\ CheckBackspace() ? "\<Tab>" :
+" 			\ coc#refresh()
+" inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
 
 " https://blog.csdn.net/m0_70748381/article/details/126929463
 "inoremap <silent><expr> <C-n> coc#pum#visible() ? coc#pum#next(0) : "\<C-n>"
@@ -150,3 +150,8 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+
+" 取消补全时使用up和down可以选择补全项。
+" https://www.reddit.com/r/vim/comments/ro8yn2/block_arrow_updown_for_the_coc_selection_list_in/
+inoremap <expr> <Up> pumvisible() ? "\<C-y>\<Up>" : "\<Up>"
+inoremap <expr> <Down> pumvisible() ? "\<C-y>\<Down>" : "\<Down>"
