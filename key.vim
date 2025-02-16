@@ -55,6 +55,8 @@ source ~/.vim_my/keys/coc_key.vim
 source ~/.vim_my/keys/blameline.vim
 source ~/.vim_my/keys/bufferline.vim
 source ~/.vim_my/keys/arsync.vim
+source ~/.vim_my/keys/markdown-preview.vim
 source ~/.vim_my/keys/acm.vim
+source ~/.vim_my/keys/translator.vim
 
 
