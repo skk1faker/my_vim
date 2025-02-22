@@ -37,12 +37,20 @@ call plug#begin()
 	Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 	Plug 'img-paste-devs/img-paste.vim'
 	Plug 'voldikss/vim-translator'
+	"输入法
+	"Plug 'vimim/vimim'
+	Plug 'ZSaberLv0/ZFVimJob'
+	"Plug 'ZSaberLv0/ZFVimGitUtil'
+	Plug 'ZSaberLv0/ZFVimIM'
+	Plug 'ZSaberLv0/ZFVimIM_openapi' " 百度云输入法
+
 call plug#end()
 
 
 source ~/.vim_my/plugs/blameline.vim
 source ~/.vim_my/plugs/airline.vim
 "source ~/.vim_my/plugs/bufferline.vim
+source ~/.vim_my/plugs/input.vim
 source ~/.vim_my/plugs/bufexplorer.vim
 source ~/.vim_my/plugs/arsync.vim
 source ~/.vim_my/plugs/tagbar.vim
