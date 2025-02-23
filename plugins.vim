@@ -43,6 +43,7 @@ call plug#begin()
 	"Plug 'ZSaberLv0/ZFVimGitUtil'
 	Plug 'ZSaberLv0/ZFVimIM'
 	Plug 'ZSaberLv0/ZFVimIM_openapi' " 百度云输入法
+	Plug 'ZSaberLv0/ZFVimIM_pinyin_huge'	
 
 call plug#end()
 
@@ -59,4 +60,3 @@ source ~/.vim_my/plugs/gitgutter.vim
 source ~/.vim_my/plugs/markdown-preview.vim
 source ~/.vim_my/plugs/markdown-insert-picture.vim
 source ~/.vim_my/plugs/translator.vim
-
