@@ -155,3 +155,4 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 " https://www.reddit.com/r/vim/comments/ro8yn2/block_arrow_updown_for_the_coc_selection_list_in/
 inoremap <expr> <Up> pumvisible() ? "\<C-y>\<Up>" : "\<Up>"
 inoremap <expr> <Down> pumvisible() ? "\<C-y>\<Down>" : "\<Down>"
+noremap <nowait><silent> <F3> :CocRestart<CR>

@@ -1,3 +1,14 @@
 nnoremap <leader>d :ARsyncDown<CR>
 nnoremap <leader>u :ARsyncUp<CR>
 nnoremap <leader>ud :ARsyncUpDelete<CR>
+"remote_host     example.com
+"remote_user    john
+"remote_port    22
+"remote_passwd  secret
+"remote_path     ~/temp/
+"local_path    /home/ken/temp/vuetest/
+"ignore_path     ["build/","test/"]
+"ignore_dotfiles 1
+"auto_sync_up    0
+"remote_or_local remote
+"sleep_before_sync 0
