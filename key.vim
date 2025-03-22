@@ -60,5 +60,5 @@ source ~/.vim_my/keys/markdown-insert-picture.vim
 source ~/.vim_my/keys/acm.vim
 source ~/.vim_my/keys/translator.vim
 source ~/.vim_my/keys/input.vim
-
+source ~/.vim_my/keys/tools.vim
 
