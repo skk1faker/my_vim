@@ -1,6 +1,7 @@
 call plug#begin()
 	Plug 'neoclide/coc.nvim'	" 出现”[coc.nvim] build/index.js not found, please install dependencies and compile coc.nvim by: npm ci“的处理方法https://github.com/neoclide/coc.nvim/issues/3258
 	Plug 'majutsushi/tagbar'
+	Plug 'idbrii/vim-tagimposter'
 
 	Plug 'nvim-tree/nvim-web-devicons' " Recommended (for coloured icons)
 	Plug 'akinsho/bufferline.nvim', { 'tag': '*' }

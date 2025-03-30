@@ -19,7 +19,7 @@ function! MarkdownInsertPicture()
 		echo screen_pic_fold . "not exit"
 	endif
 
-	let latest_file = system("ls -lt ". shellescape(screen_pic_fold) . "| grep -E 'Capture|Screenshot' | head -n 1 | awk '{print $9}'")
+	let latest_file = system("ls -lt ". shellescape(screen_pic_fold) . "| grep -E 'Capture|Screenshot|Annotation' | head -n 1 | awk '{print $9}'")
 	if v:shell_error != 0
 		echo "not fond lastest screen picture"
 	endif
