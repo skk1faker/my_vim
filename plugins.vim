@@ -46,6 +46,13 @@ call plug#begin()
 	Plug 'ZSaberLv0/ZFVimIM_openapi' " 百度云输入法
 	Plug 'ZSaberLv0/ZFVimIM_pinyin_huge'	
 
+	" fzf
+	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+	Plug 'junegunn/fzf.vim'
+
+	" ack
+	Plug 'mileszs/ack.vim'
+
 call plug#end()
 
 
