@@ -1,5 +1,5 @@
 
 " 项目相关设置
-set path=/xx/**
-set tags=/xx/tags
+set path=/home/skt1faker/my_procedure/phy_engine
+set tags=/home/skt1faker/my_procedure/tags
 set tagfunc=

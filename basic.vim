@@ -1,5 +1,5 @@
 
-set termguicolors
+" set termguicolors
 
 let mapleader = "\<space>"			"这句话必须放在最前面，否则无法重新映射leader https://blog.csdn.net/qwaszx523/article/details/77878517
 "set paste							" 打开这个会导致补全失败

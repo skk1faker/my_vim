@@ -1,3 +1,0 @@
-[submodule "plugs/async/clang"]
-	path = plugs/async/clang
-	url = https://github.com/keremc/asyncomplete-clang.vim.git
