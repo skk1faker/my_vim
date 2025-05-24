@@ -70,3 +70,4 @@ source ~/.vim_my/plugs/gitgutter.vim
 source ~/.vim_my/plugs/markdown-preview.vim
 source ~/.vim_my/plugs/markdown-insert-picture.vim
 source ~/.vim_my/plugs/translator.vim
+source ~/.vim_my/plugs/netrw.vim

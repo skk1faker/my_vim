@@ -16,8 +16,8 @@ endfunc
 ""		exec "python -m pdb % "
 ""	endif
 ""endfunc 
-map <F8> :call CompileRunGcc() <CR>
-func! CompileRunGcc()
+map <F8> :call Compile() <CR>
+func! Compile()
 	exec  " w "
 	exec  "!date"
 	"exec  "lcd %:h"
@@ -35,5 +35,7 @@ func! CompileRunGcc()
 		exec "!bash ./% "
 	elseif &filetype == 'py'
 		exec "python %"
+	elseif $filetype == 'go'
+		exec "go run %"
 	endif
 endfunc 
