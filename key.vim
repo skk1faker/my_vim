@@ -35,8 +35,11 @@ noremap <leader>t :CallTermainal<CR>
 vmap < <gv
 vmap > >gv
 
-map <C-Left> <nop>
-map <C-Right> <nop>
+map <C-Left> :vertical resize -2<CR>
+map <C-Right> :vertical resize +2<CR>
+map <C-Up> :resize +2<CR>
+map <C-Down> :resize -2<CR>
+
 imap <C-Left> <nop>
 imap <C-Right> <nop>
 map <PageUp> <nop>
@@ -61,5 +64,5 @@ source ~/.vim_my/keys/acm.vim
 source ~/.vim_my/keys/translator.vim
 source ~/.vim_my/keys/input.vim
 source ~/.vim_my/keys/tools.vim
-source ~/.vim_my/keys/ack.vim
+source ~/.vim_my/keys/get_root.vim
 
