@@ -1,5 +1,7 @@
-source ~/.vim_my/basic.vim
-source ~/.vim_my/plugins.vim
-source ~/.vim_my/colorschemes.vim
-source ~/.vim_my/project/config.vim
-source ~/.vim_my/key.vim
+set runtimepath+=~/.vimconfig
+
+runtime basic.vim
+runtime plugins.vim
+runtime colorschemes.vim
+runtime project/config.vim
+runtime key.vim

@@ -19,6 +19,9 @@ let g:netrw_altv = 0
 "设置文件浏览器窗口宽度为 25%
 let g:netrw_winsize = 25
 
+let g:netrw_preview = 1
+
+" 预览使用p键
 
 "自动打开文件浏览器 netrw
 "augroup ProjectDrawer

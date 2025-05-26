@@ -58,16 +58,16 @@ call plug#begin()
 call plug#end()
 
 
-source ~/.vim_my/plugs/blameline.vim
-source ~/.vim_my/plugs/airline.vim
-"source ~/.vim_my/plugs/bufferline.vim
-source ~/.vim_my/plugs/input.vim
-source ~/.vim_my/plugs/bufexplorer.vim
-source ~/.vim_my/plugs/arsync.vim
-source ~/.vim_my/plugs/tagbar.vim
-source ~/.vim_my/plugs/coc.vim
-source ~/.vim_my/plugs/gitgutter.vim
-source ~/.vim_my/plugs/markdown-preview.vim
-source ~/.vim_my/plugs/markdown-insert-picture.vim
-source ~/.vim_my/plugs/translator.vim
-source ~/.vim_my/plugs/netrw.vim
+runtime plugs/blameline.vim
+runtime plugs/airline.vim
+"runtime plugs/bufferline.vim
+runtime plugs/input.vim
+runtime plugs/bufexplorer.vim
+runtime plugs/arsync.vim
+runtime plugs/tagbar.vim
+runtime plugs/coc.vim
+runtime plugs/gitgutter.vim
+runtime plugs/markdown-preview.vim
+runtime plugs/markdown-insert-picture.vim
+runtime plugs/translator.vim
+runtime plugs/netrw.vim
