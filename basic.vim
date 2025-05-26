@@ -78,5 +78,5 @@ au BufWinEnter * silent! loadview
 set backspace=indent,eol,start
 
 " 刷题键位
-source ~/.vim_my/basic/acm.vim
-source ~/.vim_my/basic/input.vim
+runtime basic/acm.vim
+runtime basic/input.vim

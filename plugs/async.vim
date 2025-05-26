@@ -14,7 +14,7 @@ endif
 
 
 " 使用cland补全
-source ~/.vim_my/plugs/async/clang/autoload/asyncomplete/sources/clang.vim
+source g:rootPath/plugs/async/clang/autoload/asyncomplete/sources/clang.vim
 autocmd User asyncomplete_setup call asyncomplete#register_source(
 	\ asyncomplete#sources#clang#get_source_options({
 	\     'config': {

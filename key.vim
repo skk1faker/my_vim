@@ -54,15 +54,15 @@ imap <C-h> <ESC>gea
 
 noremap <F6> :set paste!<CR>
 
-source ~/.vim_my/keys/coc_key.vim
-source ~/.vim_my/keys/blameline.vim
-source ~/.vim_my/keys/bufferline.vim
-source ~/.vim_my/keys/arsync.vim
-source ~/.vim_my/keys/markdown-preview.vim
-source ~/.vim_my/keys/markdown-insert-picture.vim
-source ~/.vim_my/keys/acm.vim
-source ~/.vim_my/keys/translator.vim
-source ~/.vim_my/keys/input.vim
-source ~/.vim_my/keys/tools.vim
-source ~/.vim_my/keys/get_root.vim
+runtime keys/coc_key.vim
+runtime keys/blameline.vim
+runtime keys/bufferline.vim
+runtime keys/arsync.vim
+runtime keys/markdown-preview.vim
+runtime keys/markdown-insert-picture.vim
+runtime keys/acm.vim
+runtime keys/translator.vim
+runtime keys/input.vim
+runtime keys/tools.vim
+runtime keys/get_root.vim
 
