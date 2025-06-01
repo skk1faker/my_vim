@@ -38,7 +38,7 @@ call plug#begin()
 
 	" markdown 记笔记工具
 	Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
-	"Plug 'img-paste-devs/img-paste.vim'
+	Plug 'img-paste-devs/img-paste.vim'
 	Plug 'voldikss/vim-translator'
 	"输入法
 	"Plug 'vimim/vimim'
