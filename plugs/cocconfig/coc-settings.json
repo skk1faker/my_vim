@@ -41,6 +41,7 @@
    "suggest.disableKeymap": true,
    "coc.preferences.completion.autoTrigger" : true,
    "inlayHint.enable":true,        // 显示函数形参变量名https://www.reddit.com/r/neovim/comments/1116hno/coc_disabling_inlayhints
-   "snippets.userSnippetsDirectory": "~/.vim/plugged/vim-snippets/snippets"
+  "snippets.userSnippetsDirectory": "~/.vim/plugged/vim-snippets/snippets",
+  "snippets.ultisnips.pythonPrompt": false
 }
 

@@ -1,4 +1,4 @@
-set runtimepath+=~/.vimconfig
+set runtimepath+=~/configRepo/vimconfig
 
 runtime basic.vim
 runtime plugins.vim

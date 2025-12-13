@@ -62,7 +62,8 @@ set cursorline
 set pumheight=10
 
 " 更新时间20ms, 用于blameline中快速刷新显示
-set updatetime=20
+" 快速更新的后果就是频繁的刷新语法高亮，导致vim会很卡
+set updatetime=300
 
 "  设置补全不显示提示
 set completeopt=menu
@@ -80,3 +81,6 @@ set backspace=indent,eol,start
 " 刷题键位
 runtime basic/acm.vim
 runtime basic/input.vim
+
+" gui字体配置
+set guifont=JetBrains\ Mono\ Bold\ 15

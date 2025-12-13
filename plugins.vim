@@ -71,3 +71,4 @@ runtime plugs/markdown-preview.vim
 runtime plugs/markdown-insert-picture.vim
 runtime plugs/translator.vim
 runtime plugs/netrw.vim
+runtime plugs/fzf.vim
