@@ -84,3 +84,5 @@ runtime basic/input.vim
 
 " gui字体配置
 set guifont=JetBrains\ Mono\ Bold\ 15
+
+filetype plugin on

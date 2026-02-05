@@ -55,6 +55,9 @@ call plug#begin()
 	" ack
 	Plug 'mileszs/ack.vim'
 
+	" comment
+	Plug 'preservim/nerdcommenter'
+
 call plug#end()
 
 
@@ -72,3 +75,4 @@ runtime plugs/markdown-insert-picture.vim
 runtime plugs/translator.vim
 runtime plugs/netrw.vim
 runtime plugs/fzf.vim
+runtime plugs/comment.vim
