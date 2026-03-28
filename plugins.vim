@@ -20,6 +20,7 @@ call plug#begin()
 
 	"Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'npm ci'}
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
+	Plug 'habamax/vim-godot'
 
 	" git工具
 	Plug 'airblade/vim-gitgutter'

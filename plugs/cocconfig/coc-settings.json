@@ -35,12 +35,26 @@
 	   "initializationOptions": {
 		   "usePlaceholders": true
 	   }
+   },
+   "csharp": {
+	   "command": "omnisharp",
+	   "args": ["-lsp"],
+	   "rootPatterns": ["*.slnx","*.sln", "*.csproj", ".git/"],
+	   "filetypes": ["cs"],
+	   "trace.server": "off"
+   },
+   "godot": {
+	   "host": "127.0.0.1",
+	   "port": 6005,
+	   "filetypes": ["gd", "gdscript", "gdscript3"],
+	   "rootPatterns": ["project.godot", ".git"],
+	   "trace.server": "off"
    }
   },
   "suggest.noselect": true,
    "suggest.disableKeymap": true,
    "coc.preferences.completion.autoTrigger" : true,
-   "inlayHint.enable":true,        // 显示函数形参变量名https://www.reddit.com/r/neovim/comments/1116hno/coc_disabling_inlayhints
+   "inlayHint.enable":true,
   "snippets.userSnippetsDirectory": "~/.vim/plugged/vim-snippets/snippets",
   "snippets.ultisnips.pythonPrompt": false
 }
