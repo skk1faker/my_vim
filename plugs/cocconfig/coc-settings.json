@@ -43,12 +43,16 @@
 	   "filetypes": ["cs"],
 	   "trace.server": "off"
    },
-   "godot": {
-	   "host": "127.0.0.1",
-	   "port": 6005,
-	   "filetypes": ["gd", "gdscript", "gdscript3"],
-	   "rootPatterns": ["project.godot", ".git"],
-	   "trace.server": "off"
+   //"godot": {
+   //    "host": "127.0.0.1",
+   //    "port": 6005,
+   //    "filetypes": ["gd", "gdscript", "gdscript3"],
+   //    "rootPatterns": ["*.godot", ".git"],
+   //    "trace.server": "off"
+   //},
+   "gdshader": {
+	   "command": "gdshader-language-server",
+	   "filetypes": ["gdshader"]
    }
   },
   "suggest.noselect": true,

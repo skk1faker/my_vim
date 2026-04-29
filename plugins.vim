@@ -1,10 +1,13 @@
 call plug#begin()
+
+	" 语法补全相关
 	Plug 'neoclide/coc.nvim'	" 出现”[coc.nvim] build/index.js not found, please install dependencies and compile coc.nvim by: npm ci“的处理方法https://github.com/neoclide/coc.nvim/issues/3258
 	Plug 'honza/vim-snippets' 
 
 	Plug 'majutsushi/tagbar'
 	Plug 'idbrii/vim-tagimposter'
 
+	" 状态栏相关
 	Plug 'nvim-tree/nvim-web-devicons' " Recommended (for coloured icons)
 	Plug 'akinsho/bufferline.nvim', { 'tag': '*' }
 	Plug 'adamatom/blameline.vim'
@@ -59,6 +62,12 @@ call plug#begin()
 	" comment
 	Plug 'preservim/nerdcommenter'
 
+	" format 
+	Plug 'sbdchd/neoformat'
+
+	" 文件目录树
+	Plug 'preservim/nerdtree'
+
 call plug#end()
 
 
@@ -77,3 +86,5 @@ runtime plugs/translator.vim
 runtime plugs/netrw.vim
 runtime plugs/fzf.vim
 runtime plugs/comment.vim
+runtime plugs/neoformat.vim
+runtime plugs/nerdtree.vim

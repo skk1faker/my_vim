@@ -85,4 +85,6 @@ runtime basic/input.vim
 " gui字体配置
 set guifont=JetBrains\ Mono\ Bold\ 15
 
+" 设置鼠标可用
+set mouse=a
 filetype plugin on
