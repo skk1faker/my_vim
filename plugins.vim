@@ -28,6 +28,9 @@ call plug#begin()
 	" git工具
 	Plug 'airblade/vim-gitgutter'
 	Plug 'Xuyuanp/nerdtree-git-plugin'
+	if has('nvim') 
+		Plug 'sindrets/diffview.nvim'
+	endif
 
 	" airline显示分支
 	Plug 'tpope/vim-fugitive'
@@ -90,3 +93,6 @@ runtime plugs/comment.vim
 runtime plugs/neoformat.vim
 runtime plugs/nerdtree.vim
 runtime plugs/gitnerdtree.vim
+if has('nvim')
+    runtime plugs/diffview.vim
+endif
