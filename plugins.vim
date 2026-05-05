@@ -27,6 +27,7 @@ call plug#begin()
 
 	" git工具
 	Plug 'airblade/vim-gitgutter'
+	Plug 'Xuyuanp/nerdtree-git-plugin'
 
 	" airline显示分支
 	Plug 'tpope/vim-fugitive'
@@ -88,3 +89,4 @@ runtime plugs/fzf.vim
 runtime plugs/comment.vim
 runtime plugs/neoformat.vim
 runtime plugs/nerdtree.vim
+runtime plugs/gitnerdtree.vim
