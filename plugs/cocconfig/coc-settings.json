@@ -53,7 +53,22 @@
    "gdshader": {
 	   "command": "gdshader-language-server",
 	   "filetypes": ["gdshader"]
-   }
+   },
+   "glslls": {
+      "command": "glslls",
+      "args": ["--stdin"],
+      "filetypes": ["glsl", "vert", "frag", "geom", "comp"],
+      "rootPatterns": [".git"],
+      "settings": {
+        "glslls": {
+          "capabilities": {
+            "hoverProvider": true,
+            "completionProvider": true,
+            "definitionProvider": true
+          }
+        }
+      }
+    }
   },
   "suggest.noselect": true,
    "suggest.disableKeymap": true,
