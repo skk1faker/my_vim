@@ -56,7 +56,7 @@
    },
    "glslls": {
       "command": "glslls",
-      "args": ["--stdin"],
+      "args": ["--stdin","--target-env", "opengl"],
       "filetypes": ["glsl", "vert", "frag", "geom", "comp"],
       "rootPatterns": [".git"],
       "settings": {
