@@ -93,6 +93,7 @@ runtime plugs/comment.vim
 runtime plugs/neoformat.vim
 runtime plugs/nerdtree.vim
 runtime plugs/gitnerdtree.vim
+runtime plugs/todo.vim
 if has('nvim')
     runtime plugs/diffview.vim
 endif
