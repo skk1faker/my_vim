@@ -52,7 +52,7 @@
    //},
    "gdshader": {
 	   "command": "gdshader-language-server",
-	   "filetypes": ["gdshader"]
+	   "filetypes": ["gsl"]
    },
    "glslls": {
       "command": "glslls",

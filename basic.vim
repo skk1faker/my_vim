@@ -91,3 +91,15 @@ set guifont=JetBrains\ Mono\ Bold\ 15
 " 设置鼠标可用
 set mouse=a
 filetype plugin on
+
+" ==================== Wayland 剪贴板桥接 ====================
+" Vim 的 + 寄存器依赖 X11 协议，在 Wayland 下需要手动桥接到 wl-copy/wl-paste
+if $WAYLAND_DISPLAY != ''
+  " 复制: yank 后用 wl-copy 写入系统剪贴板
+  xnoremap <silent> "+y y:call system('wl-copy', @0)<CR>
+  nnoremap <silent> "+yy yy:call system('wl-copy', @0)<CR>
+  " 粘贴: 从 wl-paste 读取系统剪贴板
+  nnoremap <silent> "+p :call setreg('"', system('wl-paste --no-newline'))<CR>p
+  nnoremap <silent> "+P :call setreg('"', system('wl-paste --no-newline'))<CR>P
+  xnoremap <silent> "+p :call setreg('"', system('wl-paste --no-newline'))<CR>gvp
+endif

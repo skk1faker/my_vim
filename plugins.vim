@@ -23,7 +23,9 @@ call plug#begin()
 
 	"Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'npm ci'}
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
+	"https://github.com/habamax/vim-godot, 好用的godot工具, 可以运行场景
 	Plug 'habamax/vim-godot'
+	"Plug 'mphe/vim-gdscript4'
 
 	" git工具
 	Plug 'airblade/vim-gitgutter'
