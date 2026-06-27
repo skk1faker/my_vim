@@ -67,6 +67,8 @@ runtime keys/tools.vim
 runtime keys/get_root.vim
 runtime keys/comment.vim
 runtime keys/nerdtree.vim
+runtime keys/godot.vim
+
 if has('nvim')
     runtime keys/diffview.vim
 endif
